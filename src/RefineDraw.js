@@ -4,15 +4,11 @@ import { withStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
 import { mailFolderListItems, otherMailFolderListItems } from "./tileData";
 
 const styles = {
   list: {
     width: "60vw"
-  },
-  fullList: {
-    width: "auto"
   }
 };
 
@@ -52,13 +48,6 @@ class RefineDraw extends React.Component {
           onClose={this.toggleDrawer("right", false)}
         >
           {sideList}
-
-          <div
-            tabIndex={0}
-            role="button"
-            onClick={this.toggleDrawer("right", false)}
-            onKeyDown={this.toggleDrawer("right", false)}
-          />
         </Drawer>
       </div>
     );

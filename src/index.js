@@ -17,19 +17,9 @@ function App() {
     <div className="App">
       <h1>Adorama headless sandbox</h1>
 
-      <Badge badgeContent={8} color="secondary">
-        <Button variant="raised" color="primary">
-          Add to cart
-        </Button>
+      <Badge badgeContent={118} color="secondary">
+        <RefineDraw />
       </Badge>
-      <br />
-      <br />
-      <br />
-      <RefineDraw />
-
-      <SwipeableDrawer>
-        <div>test</div>
-      </SwipeableDrawer>
     </div>
   );
 }
